@@ -18,7 +18,6 @@ function playRandomMove(index) {
     var move = chooseRandom(legalMoves);
     var promotion = chooseRandom(promotions);
     abChess.play(move.start, move.end, promotion);
-    gamePGN.innerText = abChess.getPGN();
     index += 1;
     if (abChess.is50Moves(index) ||
         abChess.isCheckmate(index) ||
@@ -29,7 +28,7 @@ function playRandomMove(index) {
     }
     timeout = setTimeout(function () {
         playRandomMove(index);
-    }, 400);
+    }, 300);
 }
 
 setTimeout(function () {

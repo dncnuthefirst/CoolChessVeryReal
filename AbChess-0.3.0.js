@@ -97,7 +97,7 @@ window.AbChess = window.AbChess || function (abId, abOptions) {
         animated: true,
         animationSpeed: 20,
         clickable: true,
-        coordinates: true,
+        coordinates: false,
         draggable: true,
         imagesExtension: ".png",
         imagesPath: "images/wikipedia/",
